@@ -106,7 +106,7 @@ class App extends React.Component {
           <Center>
           <Navbar/>
           </Center>
-        <div className='container' style={{maxWidth: '1000px', paddingTop: '100px'}}>
+        <div className='container' style={{maxWidth: '1000px', paddingTop: '60px'}}>
           <div className='chat-header'>
             <h5>Talk With Joy Bot</h5>
           </div>

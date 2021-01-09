@@ -20,7 +20,7 @@
 }
 
 .empty-chat h2 {
-  color: #1546dc;
+  color: #22577A;
   font-family: 'Abril Fatface';
   padding: 0;
   font-size: 2rem;
@@ -90,7 +90,7 @@
 }
 
 .input-group .fa {
-  color: #007bff;
+  color: #22577A;
   float: right;
 }
 
@@ -187,7 +187,7 @@
 }
 
 .is-user {
-  background-color: #1546DC;
+  background-color: #22577A;
 }
 
 .is-other {
