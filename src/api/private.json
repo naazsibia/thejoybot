@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "joy-chatbot-9vpv",
+  "private_key_id": "9f1889fc8a4f488402e48d69bb61707e8d0c4fb8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDTxqT26yIkmfDP\nf5rhWTJfDy/ldqXrBCAOViP3EGMgSTka/TpaAfQNJiRXQKzoGmNh6WKbwGpABSw5\nNKuqZK7O9LOgFf4fgyfiqhRGALJF/G35vlric+D4YOZy4uM7/THNVgGBni+o/+Kx\nSOdD7WaiVW8zs4NLTrYkto9mc6K24BPtrrtqP2ObJzsN++faUQYnoFO4Bla2vrjM\nHJayHjgAzO9qVrsgOIpGF/Z/iYWucnIGFf0LuBWp5nVHbn4WOjuaNlujd4QUAYIf\n/1CP0zB4e2rHr604rmhlHWo0UE0fGlQW8G+5nWnxgpGmJrO1fNMVgAYHtliXoJjk\nsYgzclSlAgMBAAECggEADAJYJhOc/6WMvSRa7HiAalktub3WsgZHD+Kp1QxxP2Pa\nzY40M7J0qOI6B71uw+K3/zw0dhydNqNhQWucaH2fioDgRsdSF9T6LnJZBl2eJM90\n9RQ3il8ddmt+ssXtZa0TMk+0QJA8QUGLFP6YKFP03Zop3WBKpVSbVs2h21XakYAp\n3qTrAYoxVjJr/mWXWx/AUrdsD1kJZXTE+0Dsc4h9IfOHjcoG0WIp2kPL+aBMJ3C5\nShUS033K5Y/2rN0IqCHCVVG+J5TDtdbu8NolwjZWaH/7lfqAIS+8RLGlzvH3wInO\nlW0HW6vYjEkAZipgWkORFq5PWllYq+SDSFqd6+diKQKBgQDrwKZK8uys7IrP2FCM\nNs79HmCx5i5BRuOmSCTUBwkR46xL9xWavNzksJIEZC3h9e4lmltOtdEYjj/ui89X\nUOuUTn4e8C6CACKwBnlPSPUXd4dIYWDLUu/pMPqgfOIETUXswtK6FmfWOIwgmCNl\nj17UR07W2SGXUQIHmEeOdNmg8wKBgQDl9tYDS4NXIIi0chhnhSZ8Qqj/nTJFNVkg\nkPO6+hi2aLBWNZ5TbiyOKV9Fhg3X7Nz4fgb/MaBz01iIjLDDf2cd1uo6WYj7LNg8\nm+MQ/DDadGBGsLlsrbywOCocMtS8URozvv7StqJe8s0QbT1aOnUN1SZFUTH85ifQ\nQPVns9DaBwKBgFaBqoN2AEKzyXva9DN/KRTYQMMGo5JwYLhzYJAsxLc7w81cLSFK\njAOehvX1jKCNjYVezoJjVQadq/fsdXikyMzywHS5zVcGlbPhrEHbk5O42HtGwC3b\nkQ0QW+bn7EeH01C9bHW8Iv4IYeLT8KkjorhiMhvEMP9FSmlfB2LOnczhAoGBAMQC\nJGAimQxGWr8TEOILh8YaO1nEbvi2hAVSB6yzRyUTDlos0YpjOe7iLKZhoKMO7TmQ\nkf4qGo0e8zNQV8oKaaXxbSvW7P7KNnVSmbP8gNdyoi0erK2JWG8LMDlgyhrJNgAt\nJ54KtVMguNDri4PAl8z2hOxITMc2lXDYLVP63GU5AoGAQWejqJlPLWYG7bpdn8o1\n4FSXaxQvlcldFWPIMDDwcl6OZ9mkAFlGC0W8GdZTSqrBQDsVEeFIombh9s1XfLg8\n0/OTr6wxpFlA/LziYnxR1/XAa1Qg/9GZvooJ1RIzSO1aOj0MQ1vXvUfy8yGguCt5\nhwGwz+rmqkF04U7PEK0AyAQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "joy-api-service@joy-chatbot-9vpv.iam.gserviceaccount.com",
+  "client_id": "107085019989335942821",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/joy-api-service%40joy-chatbot-9vpv.iam.gserviceaccount.com"
+}
