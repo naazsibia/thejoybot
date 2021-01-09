@@ -7,7 +7,19 @@ class Chat extends React.Component {
     super(props);
     this.state = {
       message: '',
+      apiResponse: '',
     };
+  }
+
+  callAPI() {
+    fetch("http://localhost:9000/testAPI")
+        .then(res => res.text())
+        .then(res => this.setState({ apiResponse: res }));
+  }
+
+  componentWillMount() {
+    console.log("Calling API");
+    this.callAPI();
   }
 
   componentDidUpdate(prevProps, prevState) {
