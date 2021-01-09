@@ -44,6 +44,51 @@ class App extends React.Component {
           "avatar": "https://data.cometchat.com/assets/images/avatars/ironman.png",
         },
       },
+      {
+        "text": "Hello Spiderman, how are you today?",
+        "id": "4",
+        "sender": {
+          "name": "Ironman",
+          "uid": "user1",
+          "avatar": "https://data.cometchat.com/assets/images/avatars/ironman.png",
+        },
+      },
+      {
+        "text": "Hello Spiderman, how are you today?",
+        "id": "5",
+        "sender": {
+          "name": "Ironman",
+          "uid": "user1",
+          "avatar": "https://data.cometchat.com/assets/images/avatars/ironman.png",
+        },
+      },
+      {
+        "text": "Hello Spiderman, how are you today?",
+        "id": "6",
+        "sender": {
+          "name": "Ironman",
+          "uid": "user1",
+          "avatar": "https://data.cometchat.com/assets/images/avatars/ironman.png",
+        },
+      },
+      {
+        "text": "Hello Spiderman, how are you today?",
+        "id": "7",
+        "sender": {
+          "name": "Ironman",
+          "uid": "user1",
+          "avatar": "https://data.cometchat.com/assets/images/avatars/ironman.png",
+        },
+      },
+      {
+        "text": "Hello Spiderman, how are you today?",
+        "id": "8",
+        "sender": {
+          "name": "Ironman",
+          "uid": "user1",
+          "avatar": "https://data.cometchat.com/assets/images/avatars/ironman.png",
+        },
+      },
     ];
 
     const user = {
@@ -57,18 +102,19 @@ class App extends React.Component {
     return (
       <ChakraProvider>
       <div>
-        <Box bg="#351F39" w="100vw" h="100vh" p={4} color="white">
+        <Box bgGradient="linear(to-r, #22577A, #57CC99)" w="100vw" h="100vh" p={4}>
           <Center>
           <Navbar/>
           </Center>
-        <div className='container' style={{maxWidth: '800px', paddingTop: '100px'}}>
+        <div className='container' style={{maxWidth: '1000px', paddingTop: '100px'}}>
           <div className='chat-header'>
             <h5>Talk With Joy Bot</h5>
           </div>
-          <ChatBox messages={this.state.messages} />
+            <ChatBox messages={this.state.messages} />
         </div>
         </Box>
       </div>
+      
       </ChakraProvider>
     )
   }
