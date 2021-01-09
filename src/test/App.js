@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Navbar } from '../lib';
+import { ChakraProvider, Box, Center } from "@chakra-ui/react"
 import { ChatBox } from '../lib';
 import  '../lib/style.css';
 import './style.css';
@@ -50,17 +51,25 @@ class App extends React.Component {
     };
 
     this.setState({ messages: messages, user: user });
-
   }
 
   render() {
     return (
-      <div className='container' style={{maxWidth: '800px', paddingTop: '100px'}}>
-        <div className='chat-header'>
-          <h5>React Chat Box Example</h5>
+      <ChakraProvider>
+      <div>
+        <Box bg="#351F39" w="100vw" h="100vh" p={4} color="white">
+          <Center>
+          <Navbar/>
+          </Center>
+        <div className='container' style={{maxWidth: '800px', paddingTop: '100px'}}>
+          <div className='chat-header'>
+            <h5>Talk With Joy Bot</h5>
+          </div>
+          <ChatBox messages={this.state.messages} />
         </div>
-        <ChatBox messages={this.state.messages} />
+        </Box>
       </div>
+      </ChakraProvider>
     )
   }
 }
