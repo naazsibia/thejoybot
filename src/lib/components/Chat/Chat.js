@@ -12,9 +12,16 @@ class Chat extends React.Component {
   }
 
   callAPI() {
-    fetch("http://localhost:9000/testAPI")
-        .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
+    let data = {'message': 'Hello'}
+    fetch("http://localhost:9000/bot", {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      }).then(res => res.text())
+        .then(res => {
+          this.setState({ apiResponse: res }); 
+          console.log(res);
+        });
   }
 
   componentWillMount() {
