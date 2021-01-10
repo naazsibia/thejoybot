@@ -37,7 +37,7 @@ class App extends React.Component {
             <Player
             client_id="c5a171200f3a0a73a523bba14a1e0a29"
             audio_id="52301001"
-            title="Relaxing Rain & Loud Thunder"
+            title="Rain"
             />
           </VStack>
           <Box maxW='750px'>
