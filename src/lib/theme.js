@@ -6,9 +6,8 @@ import { mode } from "@chakra-ui/theme-tools"
 const styles = {
   global: props => ({
     body: {
-      color: mode('blue.900, whiteAlpha.900')(props),
-      //bg: mode('blue.100','blue.900')(props),
-      bgGradient: "linear(to-r, #22577A, #57CC99)"
+      color: mode('blue.900, whiteAlpha.900')(props), //This doesn't work
+      bgGradient: "linear(to-r, #22577A, #57CC99)" //This works
     }
   })
 };
@@ -16,8 +15,8 @@ const styles = {
 const components = {
   Button: {
     baseStyle: props => ({
-      color: mode('#ffffff','#ffffff')(props),
-      _hover: {
+      color: mode('#ffffff','#ffffff')(props), //Doesn't work
+      _hover: { //works
         bg: mode('#ffffff','#22577A')(props), 
         color: mode('#22577A','#ffffff')(props)
       },
@@ -29,6 +28,14 @@ const components = {
       variant: 'ghost'
     }
   },
+  Link: {
+    baseStyle: {
+      _hover: {
+        color: '#22577A',
+        textDecoration: 'none'
+      }
+    }
+  }
 };
 
 const globalTheme = extendTheme({
