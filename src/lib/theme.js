@@ -7,7 +7,8 @@ const styles = {
   global: props => ({
     body: {
       color: mode('blue.900, whiteAlpha.900')(props),
-      bg: mode('blue.50','blue.900')(props),
+      //bg: mode('blue.100','blue.900')(props),
+      bgGradient: "linear(to-r, #22577A, #57CC99)"
     }
   })
 };
@@ -27,7 +28,7 @@ const components = {
     defaultProps: {
       variant: 'ghost'
     }
-  }
+  },
 };
 
 const globalTheme = extendTheme({

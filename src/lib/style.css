@@ -136,7 +136,7 @@
   font-family: 'Roboto';
   position: relative;
   height: 588px;
-  width: 1000px;
+  width: 750px;
   letter-spacing: 0.5px;
   background: #f8f9fb;
   padding: 0 !important;
@@ -198,4 +198,8 @@
 
 .chat-box-bottom {
   margin-top: auto;
+}
+
+.accordionInfo {
+  margin-top: 40px;
 }

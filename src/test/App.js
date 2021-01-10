@@ -1,7 +1,7 @@
 import React from 'react';
-import { Navbar } from '../lib';
-import { ChakraProvider, Box, Center } from "@chakra-ui/react"
-import { ChatBox } from '../lib';
+import { ChakraProvider, Box, Center, HStack, Flex } from "@chakra-ui/react"
+import { ChatBox, Navbar, AccordionInfo } from '../lib';
+import globalTheme from '../lib/theme';
 import  '../lib/style.css';
 import './style.css';
 
@@ -100,21 +100,21 @@ class App extends React.Component {
 
   render() {
     return (
-      <ChakraProvider>
-      <div>
-        <Box bgGradient="linear(to-r, #22577A, #57CC99)" w="100vw" h="100vh" p={4}>
-          <Center>
+      <ChakraProvider theme={globalTheme}>
+        <Center>
           <Navbar/>
-          </Center>
-        <div className='container' style={{maxWidth: '1000px', paddingTop: '100px'}}>
-          <div className='chat-header'>
-            <h5>Talk With Joy Bot</h5>
-          </div>
-            <ChatBox messages={this.state.messages} />
-        </div>
-        </Box>
-      </div>
-      
+        </Center>
+        <HStack spacing='0px' style={{paddingTop: '60px'}} wrap='wrap'>
+          <Box className='container' style={{maxWidth: '750px'}}>
+            <div className='chat-header'>
+              <h5>Talk With Joy Bot</h5>
+            </div>
+              <ChatBox messages={this.state.messages} />
+          </Box>
+          <Box w='250px'>
+            <AccordionInfo />
+          </Box>
+        </HStack>
       </ChakraProvider>
     )
   }
