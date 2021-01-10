@@ -21,25 +21,29 @@ class Chat extends React.Component {
         body: JSON.stringify(data)
       }).then(res => res.text())
         .then(res => {
-          this.setState({ apiResponse: res }); 
-          console.log(`This is the response ${res}`);
+          this.setState({ apiResponse: res }, () => {this.setBotMsg()}); 
+          console.log(`This is the response ${res}`); 
+          ;
         });
 
+  }
+
+  setBotMsg(){
     const botmsg = 
-      {
-        "text": this.state.apiResponse,
-        "id": this.count,
-        "sender": {
-          "name": "Joy",
-          "uid": "user2",
-          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
-        }
+    {
+      "text": this.state.apiResponse,
+      "id": this.count,
+      "sender": {
+        "name": "Joy",
+        "uid": "user2",
+        "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
       }
-      let { messages } = this.props;
-      messages.push(botmsg);
-      this.setState(prevState => {
-        return {count: prevState.count + 1}
-     })
+    }
+    let { messages } = this.props;
+    messages.push(botmsg);
+    this.setState(prevState => {
+      return {count: prevState.count + 1}
+   })
   }
 
   componentWillMount() {
