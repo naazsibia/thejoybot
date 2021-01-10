@@ -21,8 +21,9 @@ class Chat extends React.Component {
         body: JSON.stringify(data)
       }).then(res => res.text())
         .then(res => {
-          this.setState({ apiResponse: res }, () => {this.setBotMsg()}); 
-          console.log(`This is the response ${res}`); 
+          res = JSON.parse(res);
+          this.setState({ apiResponse: res.response, apiIntent: res.intent}, () => {this.setBotMsg()}); 
+          console.log(`This is the response: ${res.response}, ${res.intent}`); 
           ;
         });
 
@@ -44,11 +45,6 @@ class Chat extends React.Component {
     this.setState(prevState => {
       return {count: prevState.count + 1}
    })
-  }
-
-  componentWillMount() {
-    console.log("Calling API");
-    this.callAPI();
   }
 
   componentDidUpdate(prevProps, prevState) {

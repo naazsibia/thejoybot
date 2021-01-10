@@ -13,7 +13,7 @@ router.post("/", function(req, res, next) {
             res.send(msg);
         });
     }
-    else res.send("Empty message");
+    else res.send({"response": "Empty message", "intent": "none"});
 });
 
 
@@ -50,7 +50,8 @@ async function runSample(query) {
     console.log(`  Response: ${result.fulfillmentText}`);
     if (result.intent) {
         console.log(`  Intent: ${result.intent.displayName}`);
-        return result.fulfillmentText;
+        return {"response": result.fulfillmentText, 
+        "intent": result.intent.displayName};
     } else {
         console.log(`  No intent matched.`);
     }
