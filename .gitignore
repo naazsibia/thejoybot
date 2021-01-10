@@ -3,6 +3,8 @@
 .env
 # dependencies
 /node_modules
+/src/api/node_modules
+/src/api/private.json
 
 # testing
 /coverage
