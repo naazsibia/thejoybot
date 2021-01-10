@@ -9,6 +9,7 @@ class Chat extends React.Component {
     this.state = {
       message: '',
       apiResponse: '',
+      count: 0,
     };
   }
 
@@ -22,15 +23,12 @@ class Chat extends React.Component {
         .then(res => {
           this.setState({ apiResponse: res }); 
           console.log(`This is the response ${res}`);
-          this.setState({ 
-            messages: this.props.messages.concat([this.state.apiResponse])
-          })
         });
 
     const botmsg = 
       {
         "text": this.state.apiResponse,
-        "id": "2",
+        "id": this.count,
         "sender": {
           "name": "Joy",
           "uid": "user2",
@@ -39,6 +37,9 @@ class Chat extends React.Component {
       }
       let { messages } = this.props;
       messages.push(botmsg);
+      this.setState(prevState => {
+        return {count: prevState.count + 1}
+     })
   }
 
   componentWillMount() {
@@ -61,18 +62,20 @@ class Chat extends React.Component {
     const newmsg = 
       {
         "text": this.state.message,
-        "id": "2",
+        "id": this.count,
         "sender": {
           "name": "You",
           "uid": "user1",
           "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
         }
       }
-    
 
     messages.push(newmsg);
     this.callAPI()
     this.setState({message: ''});
+    this.setState(prevState => {
+      return {count: prevState.count + 1}
+   })
   };
 
   scrollToBottom = () => {
