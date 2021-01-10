@@ -12,7 +12,7 @@ class Chat extends React.Component {
   }
 
   callAPI() {
-    let data = {'message': 'Hello'}
+    let data = {'message': this.state.message};
     fetch("http://localhost:9000/bot", {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
@@ -20,7 +20,7 @@ class Chat extends React.Component {
       }).then(res => res.text())
         .then(res => {
           this.setState({ apiResponse: res }); 
-          console.log(res);
+          console.log(`This is the response ${res}`);
         });
   }
 
@@ -40,6 +40,7 @@ class Chat extends React.Component {
     event.preventDefault();
     const {message} = this.state;
     this.props.onSubmit(message);
+    this.callAPI()
     this.setState({message: ''});
   };
 
@@ -103,7 +104,9 @@ Chat.defaultProps = {
     "uid": "user1"
   },
   isLoading: false,
-  onSubmit: (message) => console.log(message)
+  onSubmit: (message) => {
+    console.log(message);
+  }
 };
 
 export default Chat;
