@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Stack, Box, Center, IconButton, useColorMode, Text} from "@chakra-ui/react"
+import { Button, Stack, Box, Center, IconButton, useColorMode, Text, Link } from "@chakra-ui/react"
 import flowers from '../assets/flowers.gif'
 
 function Navbar() {
@@ -20,25 +20,33 @@ function Navbar() {
         <Button color="#ffffff" variant="ghost" _hover={{ bg: "#ffffff", color: "#22577A"}} 
         _focus={{ boxShadow: "0 0 1px 2px rgba(234, 180, 251, .75), 0 1px 1px rgba(0, 0, 0, .15)",
       }}>
+          <Link href="https://screening.mhanational.org/screening-tools" isExternal>
           D I A G N O S T I C S
+          </Link>
         </Button>
 
         <Button color="#ffffff" variant="ghost" _hover={{ bg: "#ffffff", color: "#22577A"}} 
         _focus={{ boxShadow: "0 0 1px 2px rgba(234, 180, 251, .75), 0 1px 1px rgba(0, 0, 0, .15)",
         }}>
+          <Link href="https://xhalr.com/" isExternal>
           E X E R C I S E S 
+          </Link>
         </Button>
 
         <Button color="#ffffff" variant="ghost" _hover={{ bg: "#ffffff", color: "#22577A"}}
         _focus={{ boxShadow: "0 0 1px 2px rgba(234, 180, 251, .75), 0 1px 1px rgba(0, 0, 0, .15)",
         }}>
-          S E T T I N G S
+          <Link href="https://cmha.ca/blogs" isExternal>
+          A R T I C L E S
+          </Link>
         </Button>
 
         <Button color="#ffffff" variant="ghost" _hover={{ bg: "#ffffff", color: "#22577A"}}
         _focus={{ boxShadow: "0 0 1px 2px rgba(234, 180, 251, .75), 0 1px 1px rgba(0, 0, 0, .15)",
         }}>
+          <Link href="https://github.com/naazsibia/thejoybot" isExternal>
           A B O U T
+          </Link>
         </Button>
         {/* For toggling dark mode */}
         {/* <IconButton 
