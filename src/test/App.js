@@ -1,6 +1,7 @@
 import React from 'react';
-import { ChakraProvider, Box, Center, Text, Flex } from "@chakra-ui/react"
-import { ChatBox, Navbar, AccordionInfo, ButtonMenu } from '../lib';
+import { ChakraProvider, Box, Center, Text, Flex, VStack} from "@chakra-ui/react"
+import Player from 'react-soundcloud-player'
+import { ChatBox, Navbar, AccordionInfo, ButtonMenu, MusicPlayer } from '../lib';
 import globalTheme from '../lib/theme';
 import  '../lib/style.css';
 import './style.css';
@@ -17,80 +18,6 @@ class App extends React.Component {
 
   componentDidMount() {
     const messages = [];
-      // {
-      //   "text": "Hey",
-      //   "id": "1",
-      //   "sender": {
-      //     "name": "You",
-      //     "uid": "user1",
-      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-      //   },
-      // }
-      // {
-      //   "text": "Hello! How are you doing?",
-      //   "id": "2",
-      //   "sender": {
-      //     "name": "Joy",
-      //     "uid": "user2",
-      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
-      //   },
-      // },
-      // {
-      //   "text": "Not so great.",
-      //   "id": "3",
-      //   "sender": {
-      //     "name": "You",
-      //     "uid": "user1",
-      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-      //   },
-      // },
-      // {
-      //   "text": "A lot happened today...",
-      //   "id": "4",
-      //   "sender": {
-      //     "name": "You",
-      //     "uid": "user1",
-      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-      //   },
-      // },
-      // {
-      //   "text": "Can I tell you about it?",
-      //   "id": "5",
-      //   "sender": {
-      //     "name": "You",
-      //     "uid": "user1",
-      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-      //   },
-      // },
-      // {
-      //   "text": "Of course",
-      //   "id": "6",
-      //   "sender": {
-      //     "name": "Joy",
-      //     "uid": "user2",
-      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
-      //   },
-      // },
-      // {
-      //   "text": "What happened?",
-      //   "id": "7",
-      //   "sender": {
-      //     "name": "Joy",
-      //     "uid": "user2",
-      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
-      //   },
-      // },
-      // {
-      //   "text": "So...",
-      //   "id": "8",
-      //   "sender": {
-      //     "name": "You",
-      //     "uid": "user1",
-      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-      //   },
-      // },
-    //];
-
     const user = {
       "uid": "user1"
     };
@@ -105,7 +32,14 @@ class App extends React.Component {
           <Navbar/>
         </Center>
         <Flex direction='row' align='center' justify='space-between' style={{paddingTop: '60px'}} wrap='wrap'>
-          <ButtonMenu minW='250px'/>
+          <VStack>
+            <ButtonMenu minW='250px'/>
+            <Player
+            client_id="c5a171200f3a0a73a523bba14a1e0a29"
+            audio_id="193179003"
+            title="Easyfun - Fanta"
+            />
+          </VStack>
           <Box maxW='750px'>
             <div className='chat-header'>
               <h5>Talk With Joy Bot</h5>
