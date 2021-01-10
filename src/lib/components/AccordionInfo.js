@@ -1,5 +1,6 @@
 import React from 'react';
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box } from "@chakra-ui/react"
+import { Accordion, AccordionButton, AccordionIcon, 
+         AccordionItem, AccordionPanel, Box } from "@chakra-ui/react"
 
 function AccordionInfo() {
   return (
@@ -11,7 +12,7 @@ function AccordionInfo() {
           </Box>
           <AccordionIcon />
         </AccordionButton>
-        <AccordionPanel pb={4} bg='#80ED99'>
+        <AccordionPanel pb={4} bg='#C7F9CC'>
           Joy Bot is here to help you with any emotions you would like to talk 
           about. Type into the chat box and press enter to speak with Joy Bot.
           It will do its best to comfort you and give you tips :) 
@@ -25,7 +26,7 @@ function AccordionInfo() {
           </Box>
           <AccordionIcon />
         </AccordionButton>
-        <AccordionPanel pb={4} bg='#80ED99'>
+        <AccordionPanel pb={4} bg='#C7F9CC'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
