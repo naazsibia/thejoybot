@@ -4,7 +4,6 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "proxy": "http://localhost:5000",
-  "engines": { "npm": "7.3.0", "node": "15.5.0" },
   "files": [
     "dist"
   ],
