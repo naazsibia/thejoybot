@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "proxy": "http://localhost:5000",
+  "engines": { "npm": "7.3.0", "node": "15.5.0" },
   "files": [
     "dist"
   ],
@@ -34,6 +35,7 @@
     "react-dom": "^16.3.2"
   },
   "scripts": {
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm i --s && yarn add react-scripts",
     "start": "react-scripts start",
     "build-examples": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
