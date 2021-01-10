@@ -1,6 +1,6 @@
 import React from 'react';
-import { ChakraProvider, Box, Center, HStack, Flex } from "@chakra-ui/react"
-import { ChatBox, Navbar, AccordionInfo } from '../lib';
+import { ChakraProvider, Box, Center, Stack, Flex } from "@chakra-ui/react"
+import { ChatBox, Navbar, AccordionInfo, ButtonMenu } from '../lib';
 import globalTheme from '../lib/theme';
 import  '../lib/style.css';
 import './style.css';
@@ -104,8 +104,9 @@ class App extends React.Component {
         <Center>
           <Navbar/>
         </Center>
-        <HStack spacing='0px' style={{paddingTop: '60px'}} wrap='wrap'>
-          <Box className='container' style={{maxWidth: '750px'}}>
+        <Flex direction='row' align='center' justify='space-between' style={{paddingTop: '60px'}} wrap='wrap'>
+          <ButtonMenu minW='250px'/>
+          <Box maxW='750px'>
             <div className='chat-header'>
               <h5>Talk With Joy Bot</h5>
             </div>
@@ -114,7 +115,7 @@ class App extends React.Component {
           <Box w='250px'>
             <AccordionInfo />
           </Box>
-        </HStack>
+        </Flex>
       </ChakraProvider>
     )
   }
