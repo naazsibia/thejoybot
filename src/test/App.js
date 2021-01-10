@@ -25,70 +25,70 @@ class App extends React.Component {
           "uid": "user1",
           "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
         },
-      },
-      {
-        "text": "Hello! How are you doing?",
-        "id": "2",
-        "sender": {
-          "name": "Joy",
-          "uid": "user2",
-          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
-        },
-      },
-      {
-        "text": "Not so great.",
-        "id": "3",
-        "sender": {
-          "name": "You",
-          "uid": "user1",
-          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-        },
-      },
-      {
-        "text": "A lot happened today...",
-        "id": "4",
-        "sender": {
-          "name": "You",
-          "uid": "user1",
-          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-        },
-      },
-      {
-        "text": "Can I tell you about it?",
-        "id": "5",
-        "sender": {
-          "name": "You",
-          "uid": "user1",
-          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-        },
-      },
-      {
-        "text": "Of course",
-        "id": "6",
-        "sender": {
-          "name": "Joy",
-          "uid": "user2",
-          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
-        },
-      },
-      {
-        "text": "What happened?",
-        "id": "7",
-        "sender": {
-          "name": "Joy",
-          "uid": "user2",
-          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
-        },
-      },
-      {
-        "text": "So...",
-        "id": "8",
-        "sender": {
-          "name": "You",
-          "uid": "user1",
-          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-        },
-      },
+      }
+      // {
+      //   "text": "Hello! How are you doing?",
+      //   "id": "2",
+      //   "sender": {
+      //     "name": "Joy",
+      //     "uid": "user2",
+      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
+      //   },
+      // },
+      // {
+      //   "text": "Not so great.",
+      //   "id": "3",
+      //   "sender": {
+      //     "name": "You",
+      //     "uid": "user1",
+      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
+      //   },
+      // },
+      // {
+      //   "text": "A lot happened today...",
+      //   "id": "4",
+      //   "sender": {
+      //     "name": "You",
+      //     "uid": "user1",
+      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
+      //   },
+      // },
+      // {
+      //   "text": "Can I tell you about it?",
+      //   "id": "5",
+      //   "sender": {
+      //     "name": "You",
+      //     "uid": "user1",
+      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
+      //   },
+      // },
+      // {
+      //   "text": "Of course",
+      //   "id": "6",
+      //   "sender": {
+      //     "name": "Joy",
+      //     "uid": "user2",
+      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
+      //   },
+      // },
+      // {
+      //   "text": "What happened?",
+      //   "id": "7",
+      //   "sender": {
+      //     "name": "Joy",
+      //     "uid": "user2",
+      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
+      //   },
+      // },
+      // {
+      //   "text": "So...",
+      //   "id": "8",
+      //   "sender": {
+      //     "name": "You",
+      //     "uid": "user1",
+      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
+      //   },
+      // },
     ];
 
     const user = {

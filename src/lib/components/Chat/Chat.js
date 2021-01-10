@@ -1,6 +1,7 @@
 import React from 'react';
 import MessageList from './MessageList';
 import PropTypes from 'prop-types';
+import '../../../test/App.js';
 
 class Chat extends React.Component {
   constructor(props) {
@@ -21,7 +22,23 @@ class Chat extends React.Component {
         .then(res => {
           this.setState({ apiResponse: res }); 
           console.log(`This is the response ${res}`);
+          this.setState({ 
+            messages: this.props.messages.concat([this.state.apiResponse])
+          })
         });
+
+    const botmsg = 
+      {
+        "text": this.state.apiResponse,
+        "id": "2",
+        "sender": {
+          "name": "Joy",
+          "uid": "user2",
+          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/smiling-face-with-smiling-eyes_1f60a.png",
+        }
+      }
+      let { messages } = this.props;
+      messages.push(botmsg);
   }
 
   componentWillMount() {
@@ -37,9 +54,23 @@ class Chat extends React.Component {
   }
 
   handleSendMessage = event => {
+    let { messages } = this.props;
     event.preventDefault();
     const {message} = this.state;
     this.props.onSubmit(message);
+    const newmsg = 
+      {
+        "text": this.state.message,
+        "id": "2",
+        "sender": {
+          "name": "You",
+          "uid": "user1",
+          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
+        }
+      }
+    
+
+    messages.push(newmsg);
     this.callAPI()
     this.setState({message: ''});
   };
