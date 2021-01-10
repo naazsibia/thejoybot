@@ -9,6 +9,7 @@ class Chat extends React.Component {
     this.state = {
       message: '',
       apiResponse: '',
+      apiIntent: '',
       count: 0,
     };
   }
