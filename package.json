@@ -47,7 +47,8 @@
     "cors": "^2.8.5",
     "dotenv": "^4.0.0",
     "framer-motion": "^3.2.0",
-    "react-md-spinner": "^0.4.0"
+    "react-md-spinner": "^0.4.0",
+    "react-soundcloud-player": "^1.1.1"
   },
   "browserslist": {
     "production": [

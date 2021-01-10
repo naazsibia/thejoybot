@@ -31,13 +31,13 @@ class App extends React.Component {
         <Center>
           <Navbar/>
         </Center>
-        <Flex direction='row' align='center' justify='space-between' style={{paddingTop: '60px'}} wrap='wrap'>
-          <VStack>
+        <Flex direction='row' align='center' justify='space-evenly' style={{paddingTop: '60px'}} wrap='wrap'>
+          <VStack mb='20px'>
             <ButtonMenu minW='250px'/>
             <Player
             client_id="c5a171200f3a0a73a523bba14a1e0a29"
-            audio_id="193179003"
-            title="Easyfun - Fanta"
+            audio_id="52301001"
+            title="Rain"
             />
           </VStack>
           <Box maxW='750px'>
