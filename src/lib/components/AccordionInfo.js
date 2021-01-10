@@ -27,10 +27,26 @@ function AccordionInfo() {
           <AccordionIcon />
         </AccordionButton>
         <AccordionPanel pb={4} bg='#C7F9CC'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+        Joy Bot was built to be a mental health assistant and digital friend. 
+        It was created in January 2021 during the quarantine for COVID-19, a 
+        period when more common sources of support were temporarily 
+        inaccessible. It was also built for the SheHacks V online hackathon.
+        </AccordionPanel>
+      </AccordionItem>
+
+      <AccordionItem bg='rgba(255,255,255,0.3)'>
+        <AccordionButton>
+          <Box flex="1" textAlign="left">
+            Staying Healthy
+          </Box>
+          <AccordionIcon />
+        </AccordionButton>
+        <AccordionPanel pb={4} bg='#C7F9CC'>
+          Here are some tips:<br/>
+        - Drink a cup of water every 4 hours<br/>
+        - Look away from computer screens for 20 seconds every 20 minutes<br/>
+        - Proper posture will prevent muscle pain<br/>
+        - Eat a healthy meal
         </AccordionPanel>
       </AccordionItem>
     </Accordion>
