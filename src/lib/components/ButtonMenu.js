@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button, Stack, Link, Text} from "@chakra-ui/react"
+import { Button, Stack, Text} from "@chakra-ui/react"
 
 function ButtonMenu() {
   return (
-    <Stack direction='column' h='fit-content' ml='15px' mb='30px' color='#22577A' 
+    <Stack direction='column' h='fit-content' mb='30px' color='#22577A' 
       bg='white' border='1px' borderColor='#38A3A5' borderRadius='5px' spacing='0px'
       textAlign='center' shouldWrapChildren>
       <Text color='#22577A' bg='rgb(56, 163, 165, 0.3)' py='3px'>

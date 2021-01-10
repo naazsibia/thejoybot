@@ -5,7 +5,7 @@ import { Accordion, AccordionButton, AccordionIcon,
 function AccordionInfo() {
   return (
     <Accordion className='accordionInfo' color='blue.900' allowToggle>
-      <AccordionItem>
+      <AccordionItem bg='rgba(255,255,255,0.3)'>
         <AccordionButton>
           <Box flex="1" textAlign="left">
             Instructions
@@ -19,7 +19,7 @@ function AccordionInfo() {
         </AccordionPanel>
       </AccordionItem>
 
-      <AccordionItem>
+      <AccordionItem bg='rgba(255,255,255,0.3)'>
         <AccordionButton>
           <Box flex="1" textAlign="left">
             About Joy Bot
