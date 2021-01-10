@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Stack, Box, Center, IconButton, useColorMode} from "@chakra-ui/react"
+import { Button, Stack, Box, Center, IconButton, useColorMode, Text} from "@chakra-ui/react"
 import flowers from '../assets/flowers.gif'
 
 function Navbar() {
