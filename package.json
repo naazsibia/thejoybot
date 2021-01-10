@@ -8,19 +8,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nsebhastian/react-chatbox-component.git"
+    "url": "git+https://github.com/naazsibia/thejoybot.git"
   },
   "keywords": [
     "chat component",
     "react component",
     "chat box"
   ],
-  "author": "Nathan Sebhastian",
+  "author": "Naaz Sibia, Niveditha Kani, Maryam Goharhani, Kana Hashimoto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nsebhastian/react-chatbox-component/issues"
+    "url": "https://github.com/naazsibia/thejoybot/issues"
   },
-  "homepage": "https://github.com/nsebhastian/react-chatbox-component#readme",
+  "homepage": "https://github.com/naazsibia/thejoybot#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "react": "^16.3.2",
