@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, Box, Center, HStack, Flex } from "@chakra-ui/react"
+import { ChakraProvider, Box, Center, HStack, Flex, Text } from "@chakra-ui/react"
 import { ChatBox, Navbar, AccordionInfo } from '../lib';
 import globalTheme from '../lib/theme';
 import  '../lib/style.css';
@@ -16,16 +16,16 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const messages = [
-      {
-        "text": "Hey",
-        "id": "1",
-        "sender": {
-          "name": "You",
-          "uid": "user1",
-          "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
-        },
-      }
+    const messages = [];
+      // {
+      //   "text": "Hey",
+      //   "id": "1",
+      //   "sender": {
+      //     "name": "You",
+      //     "uid": "user1",
+      //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
+      //   },
+      // }
       // {
       //   "text": "Hello! How are you doing?",
       //   "id": "2",
@@ -89,7 +89,7 @@ class App extends React.Component {
       //     "avatar": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/144/facebook/65/hibiscus_1f33a.png",
       //   },
       // },
-    ];
+    //];
 
     const user = {
       "uid": "user1"
@@ -115,6 +115,9 @@ class App extends React.Component {
             <AccordionInfo />
           </Box>
         </HStack>
+        <Center>
+        <Text padding="20px" fontSize="md" color="white">Joy is a friendly bot! Your privacy is protected.</Text>
+        </Center>
       </ChakraProvider>
     )
   }
