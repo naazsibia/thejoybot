@@ -9,6 +9,13 @@ You can also access calming exercises, diagnostic tests, and other helpful resou
 We also have a music player that recommends songs based on the mood of the conversation. 
 Users are fully anonymous. None of their data is collected, so everyone can feel safe while using Joy.
 
+Devpost: https://devpost.com/software/the-joy-bot
+
+## Screenshot
+
+<p align="center"><img src="https://lh3.googleusercontent.com/HeeSUsI54DDfJRTuPTEL9rMU994LfQ15bbX75wZNY0OSdvPBFz8Bs5K7YfOKEf4f8ZgSdOihX5EvCNS3Bq1w6MTDOznBKz_xnQqB9LHz5-1zfeb5bEx-wPhOTqk8FiP9jajLvD2tGEloT6TZlFNnQJsbRXcYVhgXgAsVNh1SrCZ7EIyuyP9ArrLuG6oo55wHew9KhC1d6pYh_mOpbzLSQNEHkfLGtyS6wFIEascEOrJveVvj5RymJwhglQfmkK8nqQ1ICNlKRs1Kx5uV6TPzp_UQXABruMe6SqT-AqiE6AHkfzTZS7ZCSNXp0R4bITqns61cBukLUcuSHAkOvd0sLxS3CdNPHNv_GLcoQRak6MFLwMXoKjemEsWZCO7rBiDbtKAtKOrMtymH1HlOXZZXIE6Jh31CD6Zcq6PMvMUblALzKJk2DNh195lraBAQ-kuHgjxjwYOvSClS8G14VYLb4pvgf9FHphauk7v5RMg2qELogB4iGRJV5DnpILhD7QjSPtXl2TAWsTR3RzW6ewuXkc2ChR7HwV8Z-kc9w3ctZ0cWLPB1BH8RvMPeKFmK0xHu9gUFBbLJ1DGwFAttx0yEjpovveR1Xi7rHi5mM6khTTIi3mLAl9pYbm9QRVSKMX-M-gF1ggTQW1QDe-rynm6q_MqLBH9c7SQDn4IPP2BZOVb9eQ-ZZHaR_G6dwrt1Gg=w2214-h1190-no?authuser=0" alt="Icon"
+	title="Website" width="640" height="343" /></p> 
+
 
 ## How It Works
 
